@@ -44,7 +44,7 @@ namespace BasicEmailer
             if (email == null || email.Length == 0)
                 throw new ArgumentException("No email address specified");
 
-            var to = email.Where(x => x != null).Select(x => new MailAddress(x));
+            var to = email.Where(x => !string.IsNullOrWhiteSpace(x)).Select(x => new MailAddress(x));
             _recievers.AddRange(to);
         }
 
@@ -63,7 +63,7 @@ namespace BasicEmailer
             if (path == null || path.Length == 0)
                 throw new ArgumentException("No files specified");
 
-            var atts = path.Where(x => x != null).Select(x => new Attachment(x));
+            var atts = path.Where(x => !string.IsNullOrWhiteSpace(x)).Select(x => new Attachment(x));
             _attachments.AddRange(atts);
         }
 
