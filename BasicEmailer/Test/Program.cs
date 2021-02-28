@@ -12,7 +12,7 @@ namespace Test
             var mailer = new Emailer(settings);            
             mailer.Subject = "Linux Tux";
             mailer.Content = "<html><head></head><body><h1>This is a test</h1></body></html>";
-            mailer.AddReceiver("ravirajkhubchandani@gmail.com");
+            mailer.AddReceiver("email@gmail.com");
             mailer.AddAttachment("tux.png");
             mailer.Send();
         }
