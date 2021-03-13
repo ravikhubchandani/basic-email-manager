@@ -5,6 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Description>Wrapper for sending emails with attachements. Content can be HTML. See how to use here https://github.com/ravikhubchandani/basic-email-manager/blob/master/BasicEmailer/Test/Program.cs</Description>
+    <Authors>Ravi Khubchandani</Authors>
   </PropertyGroup>
 
   <ItemGroup>
